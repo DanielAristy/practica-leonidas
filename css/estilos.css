@@ -1,0 +1,56 @@
+/*Globales*/
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Header*/
+.header {
+  background: #1d252c;
+  display: flex;
+  height: 70px;
+  justify-content: space-between; /*Organizar elementos a cada costado*/
+  align-items: center;
+  flex-wrap: wrap; /*Cuando disminuya la pantalla baje el ultimo elemento*/
+}
+.logotipo {
+  margin-bottom: 20px;
+}
+.logotipo img {
+  height: 50px; /*Tamaño del logotipo*/
+}
+.header ol {
+  display: flex; /*Alinear los enlaces uno al lado del otro*/
+  font-size: 16px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.navegacion a {
+  padding: 0 20px; /*Separacion entre cada uno*/
+}
+
+/*Media queries*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: block; /*Cuando llegue a esta dimension el segundo elemento caiga*/
+    height: auto; /*Auto para poder que los enlaces puedan verse*/
+    text-align: center;
+  }
+  .header ol {
+    display: block;
+  }
+  .navegacion {
+    height: 50px;
+    text-align: center;
+  }
+  .logotipo {
+    margin-top: 0; /*Arriba de manera responsive estaba tomando 20px*/
+  }
+}
