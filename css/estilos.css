@@ -1,3 +1,11 @@
+/*
+Colores
+gris oscuro = #1d252c
+gris claro = #626262
+background = #1b2127
+celeste = 
+*/
+
 /*Globales*/
 body {
   margin: 0;
@@ -8,6 +16,17 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+strong {
+  color: #026fff;
+}
+h1 {
+  font-size: 38px;
+  line-height: 1.5em;
+  color: white;
+}
+img {
+  object-fit: cover;
 }
 /*Header*/
 .header {
@@ -34,6 +53,63 @@ ul {
 }
 .navegacion a {
   padding: 0 20px; /*Separacion entre cada uno*/
+}
+.hero {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  background: #1d252c;
+}
+
+.borde {
+  border: 1px solid orange;
+}
+
+.contenedor {
+  max-width: 1000px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  height: inherit;
+  margin: 0 auto;
+  flex: 1 1 0%;
+}
+/*Portafolio*/
+.proyecto {
+  display: flex;
+  justify-content: space-between;
+}
+.proyecto-imagen {
+  width: 500px;
+}
+
+/*Eventos*/
+.evento {
+  border: 1px solid yellow;
+}
+.evento-imagen {
+  width: 480px;
+  height: 200px;
+}
+
+/*Redes*/
+.contacto {
+  border: 1px solid #026fff;
+  height: 150px;
+}
+
+.redes-link {
+  border: 1px solid red;
+  display: inline-block; /*Los objetos se forme en linea*/
+  /*Ancho y Alto*/
+  width: 50px;
+  height: 50px;
+}
+
+/*Footer*/
+.footer {
+  border: 1px solid black;
 }
 
 /*Media queries*/
